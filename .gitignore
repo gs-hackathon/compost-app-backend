@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Public and Private key for encryption
+id_rsa_priv.pem
+id_rsa_pub.pem
