@@ -24,11 +24,9 @@ const userSchema = new Schema({
     },
     name: {
         type: String,
-        required: false
     },
     email: {
         type: String,
-        required: false,
         lowercase: true
     },
     hash: {
@@ -41,8 +39,9 @@ const userSchema = new Schema({
         type: Number,
         required: true
     },
-    otp: String,
-    otpExpirationTime: Date
+    otp: Number,
+    otpExpirationTime: Date,
+    otpConfirmed: Boolean
 }, { timestamps: true })
 
 module.exports = mongoose.model('Users', userSchema);
